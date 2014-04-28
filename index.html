@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Phonegap First Try </title>
+	</head>
+	<body>
+
+		<button id="simplebutton"> Click Me </button>
+		<button id="clear"> Clear </button>
+		<div id="results"></div>
+		<script src = "js/zepto.min.js">
+		</script>
+		<script src = "js/simple.js">
+		</script>
+		<script>
+		$('#simplebutton').click(function()
+		{
+			SimpleDate.GetDate($('#results'));
+		});
+		$('#clear').click(function()
+		{
+			$('#results').html('');
+		}
+		);
+		
+		</script>
+	</body>
+</html>
